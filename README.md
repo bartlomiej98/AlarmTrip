@@ -2,7 +2,7 @@
 
 Przykładowa aplikacja stworzona w oparciu o Xamarin.
 Aplikacja informuje nas, że jesteśmy niedaleko celu. Pewnie nie raz ktoś z nas zasnął w autobusie bądź pociągu.
-Aplikacja będzie ciągle rozwijana o nowe fubkcje oraz poprawiana tak aby jej kod oraz wygląd był do zaakceptowania.
+Aplikacja będzie ciągle rozwijana o nowe funkcje oraz poprawiana tak aby jej kod oraz wygląd był do zaakceptowania.
 
 ## Zdjęcia
 
