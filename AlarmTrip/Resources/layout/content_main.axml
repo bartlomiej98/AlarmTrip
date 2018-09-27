@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main">
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/activity_main">	
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:id="@+id/linearLayout1">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Wpisz lokalizacje docelową!"
+			android:gravity="center"
+			android:textSize="@dimen/abc_action_bar_content_inset_material"/>
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/editText1" />
+		<Button
+			android:text="Dalej"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/button1"
+			android:layout_gravity="center" />
+	</LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
+
+<android.support.design.widget.CoordinatorLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:visibility="invisible"
+	android:focusableInTouchMode="true"
+	android:id="@+id/maplayout">
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+	</android.support.design.widget.AppBarLayout>
+	<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          class="com.google.android.gms.maps.MapFragment" />
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fabmap"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@android:drawable/ic_media_previous"
+		android:onClick="BackToHome"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
 
 </RelativeLayout>

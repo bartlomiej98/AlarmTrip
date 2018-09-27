@@ -10,16 +10,20 @@
 		android:layout_height="wrap_content"
 		android:theme="@style/AppTheme.AppBarOverlay">
 	</android.support.design.widget.AppBarLayout>
-
-	<include
-		layout="@layout/content_main" />
-	<android.support.design.widget.FloatingActionButton
-		android:id="@+id/fab"
+	<com.felipecsl.gifimageview.library.GifImageView
+		android:id="@+id/gifImageView"
+		android:layout_gravity="center"
+		android:scaleType="fitCenter"
+		android:layout_width="100px"
+		android:layout_height="100px" />
+	<TextView
+		android:text="Loading App..."
+		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_gravity="bottom|end"
-		android:layout_margin="@dimen/fab_margin"
-		android:src="@android:drawable/ic_media_next"
-		android:visibility="invisible" />
+		android:layout_gravity="center"
+		android:scaleType="fitCenter"
+		android:id="@+id/textView1"
+		android:paddingTop="200px" />
 
 </android.support.design.widget.CoordinatorLayout>
